@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'The Nautigal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/thenautigal/v6/VdGZAZ8ZH51Lvng9fQV2bfKr5w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'The Nautigal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/thenautigal/v6/VdGGAZ8ZH51Lvng9fQV2bfKTWypA2w.ttf) format('truetype');
+}

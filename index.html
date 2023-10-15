@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <title>Form Undangan</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style type="text/css">
+		.input--style-8 {
+		    background: 0 0;
+		    line-height: 38px;
+		    border: 1px solid #ccc;
+		    -webkit-border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    border-radius: 3px;
+		    color: #666;
+		    font-size: 15px;
+		    -webkit-transition: all 0.4s ease;
+		    -o-transition: all 0.4s ease;
+		    -moz-transition: all 0.4s ease;
+		    transition: all 0.4s ease;
+		    padding: 0 20px;
+		    outline: none;
+		    margin: 0;
+		    /* border: none; */
+		    -webkit-box-shadow: none;
+		    -moz-box-shadow: none;
+		    box-shadow: none;
+		    width: 100%;
+		    font-size: 14px;
+		    font-family: inherit;
+		    height: 40px;			
+		}    	
+    </style>
+    <style id="" media="all">
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06FxZCJgvAQ.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* hebrew */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <link href="main.css" rel="stylesheet" media="all">
+    <meta name="robots" content="noindex, follow">
+    <script nonce="6050f027-54fe-428e-a8e0-2aae36dd06ef">
+      (function(w, d) {
+        ! function(eK, eL, eM, eN) {
+          eK.zarazData = eK.zarazData || {};
+          eK.zarazData.executed = [];
+          eK.zaraz = {
+            deferred: [],
+            listeners: []
+          };
+          eK.zaraz.q = [];
+          eK.zaraz._f = function(eO) {
+            return function() {
+              var eP = Array.prototype.slice.call(arguments);
+              eK.zaraz.q.push({
+                m: eO,
+                a: eP
+              })
+            }
+          };
+          for (const eQ of ["track", "set", "debug"]) eK.zaraz[eQ] = eK.zaraz._f(eQ);
+          eK.zaraz.init = () => {
+            var eR = eL.getElementsByTagName(eN)[0],
+              eS = eL.createElement(eN),
+              eT = eL.getElementsByTagName("title")[0];
+            eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+            eK.zarazData.x = Math.random();
+            eK.zarazData.w = eK.screen.width;
+            eK.zarazData.h = eK.screen.height;
+            eK.zarazData.j = eK.innerHeight;
+            eK.zarazData.e = eK.innerWidth;
+            eK.zarazData.l = eK.location.href;
+            eK.zarazData.r = eL.referrer;
+            eK.zarazData.k = eK.screen.colorDepth;
+            eK.zarazData.n = eL.characterSet;
+            eK.zarazData.o = (new Date).getTimezoneOffset();
+            if (eK.dataLayer)
+              for (const eX of Object.entries(Object.entries(dataLayer).reduce(((eY, eZ) => ({
+                  ...eY[1],
+                  ...eZ[1]
+                }))))) zaraz.set(eX[0], eX[1], {
+                scope: "page"
+              });
+            eK.zarazData.q = [];
+            for (; eK.zaraz.q.length;) {
+              const e_ = eK.zaraz.q.shift();
+              eK.zarazData.q.push(e_)
+            }
+            eS.defer = !0;
+            for (const fa of [localStorage, sessionStorage]) Object.keys(fa || {}).filter((fc => fc.startsWith("_zaraz_"))).forEach((fb => {
+              try {
+                eK.zarazData["z_" + fb.slice(7)] = JSON.parse(fa.getItem(fb))
+              } catch {
+                eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb)
+              }
+            }));
+            eS.referrerPolicy = "origin";
+            eS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+            eR.parentNode.insertBefore(eS, eR)
+          };
+          ["complete", "interactive"].includes(eL.readyState) ? zaraz.init() : eK.addEventListener("DOMContentLoaded", zaraz.init)
+        }(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+      <div class="wrapper wrapper--w900">
+        <div class="card card-6">
+          <div class="card-heading">
+            <h2 class="title">Form Undangan</h2>
+          </div>
+          <div class="card-body">
+            <form method="POST">
+              <div class="form-row">
+					<span style="font-size: 11px;color: red;font-style: italic;">
+						<b>Note:</b> <br>
+						1). Jika hanya ingin copy link silahkan klik <b>Salin Link</b>, jika ingin langsung mengirim ke nomor silahkan klik <b>Kirim WA</b>.<br>
+						2). Jika hanya ingin copy link tanpa nama silahkan kosongkan <b>Nama Tamu</b> dan pilih form <b>Undangan Anda</b> kemudian langsung <b>Salin Link</b>. <br>
+					</span>
+              </div>
+              <div class="form-row">
+                <div class="name">Nama Tamu <br><span style="font-size: 11px;color: red;font-style: italic;">(Note: Nama tamu tidak boleh menggunakan simbol.)</span> </div>
+                <div class="value">
+                  <input class="input--style-6" type="text" name="name" id="name" placeholder="John Dhoe">
+                  <input class="input--style-6" type="hidden" name="url" id="url">
+                  <textarea class="input--style-6" style="display:none" name="text" id="text"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Pilih Undangan Anda <br><span style="font-size: 11px;color: red;font-style: italic;">(Note: Cari undangan anda)</span> </div>
+                <div class="value">
+                  	<div class="input-group">
+						<select class="input--style-8" id="undangan">
+							<option value="">Pilih Nama Undangan</option>
+              <option value="https://undangan.bisahadir.my.id/hapsariayub/index.html">Anggita & Aldo</option>
+						</select>
+					</div>
+				</div>
+              </div>
+              <div class="form-row">
+                <div class="name">No Whatsapp Tamu <br><span style="font-size: 11px;color: red;font-style: italic;">(Note: Gunakan awalan 62)</span> </div>
+                <div class="value">
+                  <div class="input-group">
+                    <input class="input--style-6" type="number" name="phone" id="phone" placeholder="6287323xxxxx">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn--radius-2 btn--blue-2" onclick="copyText(this)" type="submit">Salin Link</button>
+            <button class="btn btn--radius-2 btn--blue-2" id="send_wa" type="submit" onclick="sendWa()">Kirim WA</button>
+          </div>
+        </div>
+      </div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="modal_warning">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Warning</h5>
+		      </div>
+		      <div class="modal-body">
+		        <p>Silahkan lengkapi form yang ada!</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-sm btn-danger" id="close_warning" data-dismiss="modal" style="line-height: 1; height: 40px;">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog" id="modal_success">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Success</h5>
+		      </div>
+		      <div class="modal-body">
+		        <p>Berhasil menyalin link undangan, silahkan share ke tamu undangan anda sesuai nama tamu undangan anda.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-sm btn-danger" id="close_success" data-dismiss="modal" style="line-height: 1; height: 40px;">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+    </div>
+    <script src="https://colorlib.com/etc/regform/colorlib-regform-6/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://colorlib.com/etc/regform/colorlib-regform-6/js/global.js"></script>
+    <script type="text/javascript">
+    	function showModalSuccess() {
+    		$("#modal_success").modal('show')
+    	};
+
+    	function closeModalSuccess() {
+    		$("#modal_success").modal('hide')
+    	}
+
+    	function showModalWarning() {
+    		$("#modal_warning").modal('show')
+    	};
+
+    	function closeModalWarning() {
+    		$("#modal_warning").modal('hide')
+    	}
+
+    	$("#close_warning").on('click', function(e) {
+    		$("#modal_warning").modal('hide')
+    	})
+
+    	$("#close_success").on('click', function(e) {
+    		$("#modal_success").modal('hide')
+    	})
+
+    	function copy()
+    	{
+			var text = $("#undangan").val()+'?name='+$("#name").val();
+			navigator.clipboard.writeText(text).then(function() {
+				showModalSuccess()
+			}, function(err) {
+			  console.error('Async: Could not copy text: ', err);
+			});
+		}
+
+		function sendWa()
+		{
+			var phone		= $("#phone").val();
+			var name		= $("#name").val();
+			var url_share	= $("#undangan").val();
+      var text    = "Assalamu'alaikum Wr. Wb %0a%0a";
+          text    += "Bismillahirahmanirrahim. %0a%0a";
+          text    += "Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i : %0a%0a";
+          text    += name+'%0a%0a';
+          text    += "untuk menghadiri acara kami. %0a%0a";
+          text    += "Berikut link undangan kami, untuk info lengkap dari acara bisa kunjungi : %0a%0a";
+          text    += url_share+'?name='+name+'%0a%0a';
+          text    += "Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu. %0a%0a";
+          text    += "Mohon maaf perihal undangan hanya di bagikan melalui pesan ini.%0a%0a";
+          text    += "Terima kasih banyak atas perhatiannya.%0a%0a";
+			var url 		= "https://wa.me/"+phone+'?text='+text;
+
+			if(phone === '' || url_share === '')
+			{
+				showModalWarning()
+			} else {
+				window.open(url, '_blank');			
+			}
+		}
+
+		function copyText() 
+		{
+			var name = $("#name").val();
+			var url  = $("#undangan").val();
+
+			if( url === '')
+			{
+				showModalWarning();
+			} else {
+				copy()
+			}
+		}
+   	
+    </script>
+  </body>
+</html>
