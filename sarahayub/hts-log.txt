@@ -1,0 +1,16 @@
+HTTrack3.49-2 launched on Sat, 21 Oct 2023 13:32:36 at https://foreverr.id/demo/uw034/ none none
+(winhttrack https://foreverr.id/demo/uw034/ -O "/Users/bs/theme/master_wedding/sarahayub" -Y -P none:8080 -%v none none )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:32:40	Warning: 	Link https://foreverr.id/demo/uw034/ not scanned (follow robots meta tag)
+13:32:40	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link none/robots.txt (from primary/primary)
+13:32:40	Warning: 	Retry after error -5 (Unable to get server's address: nodename nor servname provided, or not known) at link none/ (from primary/primary)
+13:32:41	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link none/ (from primary/primary)
+13:32:41	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link none/ (from primary/primary)
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 seconds : 7 links scanned, 2 files written (956398 bytes overall) [146491 bytes received at 29298 bytes/sec], 956467 bytes transferred using HTTP compression in 3 files, ratio 15%
+(2 errors, 3 warnings, 0 messages)

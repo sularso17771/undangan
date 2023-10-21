@@ -206,7 +206,7 @@ img.bg-login-desc {
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: #651f27;
+    background-color: #b17fa2;
     z-index: 2000;
     background-image: url("../images/textures/texture-dirty.png");
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ body.loading {
     list-style-type: none;
     align-items: center;
     border-radius: 12px;
-    background: #6e2a32;
+    background: #b17fa2;
     overflow: hidden;
 }
 
@@ -1863,7 +1863,7 @@ h4.message-name {
     width: 100%;
     height: 55vh;
     background: rgb(242, 242, 242);
-    background: linear-gradient(0deg, rgb(93 29 36) 14%, rgb(130 18 18 / 0%) 76%);
+    background: linear-gradient(359deg, rgb(177 127 162) 14%, rgb(130 18 18 / 0%) 76%);
     z-index: 2;
 }
 
@@ -1875,7 +1875,7 @@ h4.message-name {
     left: 0;
     width: 100%;
     background: rgb(242, 242, 242);
-    background: linear-gradient(0deg, rgb(93 29 36) 14%, rgb(116 116 116 / 0%) 76%);
+    background: linear-gradient(0deg, rgb(177 127 162) 14%, rgb(116 116 116 / 0%) 76%);
     transform: scale(-1);
     height: 12vh;
 }
@@ -1955,7 +1955,7 @@ h4.message-name {
     left: 0;
     width: 100%;
     background: rgb(242, 242, 242);
-    background: linear-gradient(0deg, rgb(93 29 36) 14%, rgb(51 13 15 / 41%) 76%);
+    background: linear-gradient(0deg, rgb(177 127 162) 14%, rgb(51 13 15 / 41%) 76%);
     height: 100%;
 }
 
@@ -2225,7 +2225,7 @@ h4.message-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #6e2a32;
+    background-color: #b17fa2;
     margin-bottom: 10px;
 }
 
