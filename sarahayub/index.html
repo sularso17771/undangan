@@ -2028,6 +2028,7 @@
   <script defer src="assets/js/foreverr_5c1bc0fa03972f8dca3d49479c688bbb.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+  <script id='elementor-frontend-js-before' type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script type="text/javascript">
       var count = 0;  
       const firebaseConfig = {
@@ -2046,9 +2047,9 @@
       var tableShowMessage = function (key, values) {
           var table = jQuery('#saic-container-comment-125776');
           var dibuat = (values.dibuat ? moment(values.dibuat).fromNow() : '');
-          // table.html('');
+
           var html = "";
-          html +='<li class="comment even thread-even depth-1 saic-item-comment" id="saic-item-comment-352368" data-likes="0">';
+          html +='<li class="comment even thread-even depth-1 saic-item-comment" id="saic-item-comment-352368">';
           html +='  <div id="saic-comment-352368" class="saic-comment saic-clearfix">';
           html +='    <div class="saic-comment-content">';
           html +='      <div class="saic-comment-info">';
