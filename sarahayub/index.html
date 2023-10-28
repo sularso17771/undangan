@@ -150,7 +150,7 @@
                               <div class="elementor-element elementor-element-3ac5f549 animated-slow elementor-align-center elementor-invisible elementor-widget elementor-widget-nama-tamu" data-id="3ac5f549" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="nama-tamu.default">
                                 <div class="elementor-widget-container">
                                   <div class="dear">Kepada Yth. <br>Bpk/Ibu/Saudara/i </div>
-                                  <div class="nmt" style="margin:7px 0"></div>
+                                  <div class="nmt" id="namatamu" style="margin:7px 0"></div>
                                   <div class="dear">di Tempat</div>
                                 </div>
                               </div>
@@ -2055,11 +2055,11 @@
       }
 
       jQuery(document).ready(function() {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const name      = urlParams.get('name')
-        jQuery(".wdp-name.nmt").html(name)
-        jQuery("#author").val(name)
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const name      = urlParams.get('name')
+            jQuery(".nmt#namatamu").html(name)
+            jQuery("#author").val(name)
       });
 
       // function dari jquery untuk menampilkan modal dalam menambahkan comments baru
