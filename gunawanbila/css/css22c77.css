@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Krona One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kronaone/v14/jAnEgHdjHcjgfIb1ZcUCMQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Smooch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/smooch/v7/o-0LIps4xW8U1xUBjg.ttf) format('truetype');
+}
