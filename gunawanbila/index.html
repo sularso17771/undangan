@@ -474,42 +474,19 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="text-center mb-3">
-                    <img src="https://seremoni.id/themes/goulet1/img/love.png" alt="donation" style="max-width: 60px;">
-                    <h5 class="font-bold text-center">Kirim Hadiah <br>
-                      <small> Untuk Nabila & Gunawan </small>
-                    </h5>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <label class="col-md-12"> Nama Pengirim </label>
-                      <input type="text" name="pengirim" class="form-control" required="" placeholder="Nama Pengirim">
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-12">
-                      <label class="col-md-12"> E-Mail Pengirim </label>
-                      <input type="text" name="email" class="form-control" required="" placeholder="E-Mail Pengirim">
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-12">
-                      <label class="col-md-12">Pesan Singkat </label>
-                      <textarea name="pesan" class="form-control" placeholder="Tulis Pesan Singkat.."></textarea>
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-12">
-                      <label class="col-md-12"> Nominal Hadiah </label>
-                      <input type="hidden" name="amount" id="nominal">
-                      <input type="text" id="jumlah" class="form-control" required="" placeholder="Nominal Hadiah" required="" onkeyup="changeFormat()">
-                    </div>
+                <div class="row px-3">
+                  <div class="col-12">
+                    
+                    <select class="form-control" id="bank" name="bank">
+                      <option> Pilih Bank</option>
+                      <option value="3740911456"> BCA - Gunawan Sutisna </option>
+                      <option value="8180201212"> BCA - Nabila </option>
+                    </select>
+                    <hr>
+                    <span id="norek"></span>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="submitPayment()">Kirim Hadiah</button>
-                </div>
+                <div class="cok-md-12"> &nbsp; </div>
               </form>
             </div>
           </div>
@@ -582,6 +559,11 @@
               <div class="col-12">
                 <!-- Menu -->
                 <ul class="navbar-nav navigation-menu-vertical" id="menuVertical">
+                  <li class="nav-item shadow-smooth">
+                    <a data-target="#modalGiftRekening" data-toggle="modal" class="nav-link">
+                      <span class="material-icons-outlined">wallet</span>
+                    </a>
+                  </li>
                   <li class="nav-item shadow-smooth">
                     <audio id="audioSource" class="listen" data-size="250" src="song.mp3"></audio>
                     <div class="nav-link audio">
