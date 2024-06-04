@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+new.gandilova.com	TRUE	/	FALSE	1999999999	1gwbuvy7	ne9fohh17312
+new.gandilova.com	TRUE	/	FALSE	1999999999	o1fh9xvf	exdggbempr1o
+new.gandilova.com	TRUE	/	FALSE	1999999999	spodm7lf	0vh01cu4wspp
+
